@@ -1,18 +1,36 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    const titleTemplate = asPath !== '/' ? '%s – RádioBS' : 'Documentação – RádioBS'
+    return { titleTemplate }
+  },
+
+  logo: <span><b>RádioBS</b> - v5.0.7</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/brenosolutions/lugsoft-docs',
   },
-  chat: {
-    link: 'https://discord.com',
+  docsRepositoryBase: 'https://github.com/brenosolutions/lugsoft-docs/tree/main/',
+
+  search: {
+    placeholder: 'Pesquisar Documentação...',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  editLink: {
+    text: 'Edite essa página'
+  },
+  feedback: {
+    content: 'Feedback'
+  },
+
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Documentação RádioBS',
   },
+
+
 }
 
 export default config
