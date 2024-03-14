@@ -6,22 +6,26 @@ const config: DocsThemeConfig = {
 
   useNextSeoProps() {
     const { asPath } = useRouter();
-    const titleTemplate = asPath !== '/' ? '%s – RádioBS' : 'Documentação – RádioBS'
+    const titleTemplate = asPath !== '/' ? '%s – RádioBS' : 'RádioBS - Documentação'
     return { titleTemplate }
   },
 
-  logo: <span><b>RádioBS</b> - v5.0.7</span>,
+  logo: <span><b>RádioBS</b> - V5.0.7</span>,
+
   project: {
     link: 'https://github.com/brenosolutions/lugsoft-docs',
   },
+
   docsRepositoryBase: 'https://github.com/brenosolutions/lugsoft-docs/tree/main/',
 
   search: {
     placeholder: 'Pesquisar Documentação...',
   },
+
   editLink: {
     text: 'Edite essa página'
   },
+
   feedback: {
     content: 'Feedback'
   },
@@ -29,7 +33,6 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Documentação RádioBS',
   },
-
 
 }
 

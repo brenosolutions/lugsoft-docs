@@ -1,8 +1,11 @@
 {
-  "index": "Começando",
-  "another": "Another Page",
-  "changelog": {
-    "title": "Changelog",
-    "type": "page"
-  }
+    "index": {
+        "title": "Home",
+        "type": "page",
+        "display": "hidden"
+    },
+    "docs": {
+        "title": "Documentação",
+        "type": "page"
+    }
 }
