@@ -1,7 +1,8 @@
 {
-    "index": "Começando",
     "changelog": {
         "title": "Changelog",
         "type": "page"
-    }
+    },
+    "index": "Começando",
+    "installation": "Instalação"
 }
