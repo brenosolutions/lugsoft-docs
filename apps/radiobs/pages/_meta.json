@@ -1,5 +1,7 @@
 {
-    "index": "Começando",
+    "index": {
+        "title": "Começando"
+    },
     "installation": "Instalação",
     "changelog": {
         "title": "Changelog",

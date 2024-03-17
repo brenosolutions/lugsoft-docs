@@ -19,7 +19,6 @@ const config: DocsThemeConfig = {
 
   logo: <span><b>RádioBS</b> - V5.0.7</span>,
 
-
   project: {
     link: 'https://github.com/brenosolutions/lugsoft-docs',
   },
@@ -54,12 +53,11 @@ const config: DocsThemeConfig = {
     text: () => {
       return (
         <span>
-          Desenvolvido por <a href={`https://www.lugsoft.com.br`} target="_blank" rel="noopener" className='font-bold'> Lugosft </a>
+          © Documentação RádioBS | Desenvolvido por <b><a href={`https://www.lugsoft.com.br`} target="_blank" rel="noopener" className='font-bold'> Lugosft </a></b>
         </span>
       );
     },
   },
-
 
 }
 
