@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const {
-  RADIOBS_URL = 'https://radiobs.lugsoft.com.br'
+  RADIOBS_URL = '102030docs.vercel.app'
 } = process.env
 
 module.exports = {
