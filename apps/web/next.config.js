@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const {
-  //RADIOBS_URL = 'http://localhost:3001'
-  RADIOBS_URL
-} = process.env
+const { RADIOBS_URL } = process.env
 
 module.exports = {
   async redirects() {

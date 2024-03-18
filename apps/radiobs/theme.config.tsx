@@ -2,29 +2,41 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
+const configPage = {
+  siteName: 'RádioBS',
+  siteLogo: <span><b>RádioBS</b> - V5.0.7</span>,
+  siteURL: 'https://docs.lugsoft.com.br/radiobs',
+  ProjectLink: 'https://github.com/brenosolutions/lugsoft-docs',
+  repDocs: 'https://github.com/brenosolutions/lugsoft-docs/tree/main/apps/radiobs'
+}
+
 const config: DocsThemeConfig = {
   useNextSeoProps() {
-    const { asPath } = useRouter();
-    const cleanPath = asPath.split('#')[0];
-    const directory = cleanPath.split('/')[1];
-    const titleTemplate = directory !== '' ? '%s – RádioBS' : 'Documentação - RádioBS';
+    const { pathname } = useRouter();
+    const titleTemplate = pathname !== '/' ? `%s – ${configPage.siteName}` : `Documentação - ${configPage.siteName}`;
     return { titleTemplate }
   },
 
   head: () => {
+    const { pathname, basePath } = useRouter()
+    const url = configPage.siteURL + pathname
     return (
-      <meta httpEquiv="Content-Language" content='pt' />
+      <>
+        <meta httpEquiv="Content-Language" content='pt' />
+        <meta property="og:url" content={url} />
+        <link rel="canonical" href={url} />
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
+      </>
     )
   },
 
-  logo: <span><b>RádioBS</b> - V5.0.7</span>,
+  logo: configPage.siteLogo,
 
   project: {
-    link: 'https://github.com/brenosolutions/lugsoft-docs',
+    link: configPage.repDocs,
   },
 
-  docsRepositoryBase: 'https://github.com/brenosolutions/lugsoft-docs/tree/main/',
-
+  docsRepositoryBase: configPage.repDocs,
   toc: {
     title: "Nesta Página",
     backToTop: true
@@ -53,7 +65,7 @@ const config: DocsThemeConfig = {
     text: () => {
       return (
         <span>
-          © Documentação RádioBS | Desenvolvido por <b><a href={`https://www.lugsoft.com.br`} target="_blank" rel="noopener" className='font-bold'> Lugosft </a></b>
+          © Documentação {configPage.siteName} | Desenvolvido por <b><a href={`https://www.lugsoft.com.br`} target="_blank" rel="noopener" className='font-bold'> Lugosft </a></b>
         </span>
       );
     },
