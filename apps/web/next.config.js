@@ -23,14 +23,14 @@ module.exports = {
         destination: `/:path*`,
       },
       // radiobs docs
-      {
-        source: '/radiobs',
-        destination: `${RADIOBS_URL}/radiobs`,
-      },
-      {
-        source: '/radiobs/:path*',
-        destination: `${RADIOBS_URL}/radiobs/:path*`,
-      }
+      // {
+      //   source: '/radiobs',
+      //   destination: `${RADIOBS_URL}/radiobs`,
+      // },
+      // {
+      //   source: '/radiobs/:path*',
+      //   destination: `${RADIOBS_URL}/radiobs/:path*`,
+      // }
     ]
   },
 }
