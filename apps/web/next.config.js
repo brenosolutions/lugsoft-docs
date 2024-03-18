@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const {
-  RADIOBS_URL = 'https://radiobs.lugsoft.com.br/radiobs'
+  RADIOBS_URL = 'http://localhost:3001'
 } = process.env
 
 module.exports = {

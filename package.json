@@ -2,19 +2,19 @@
   "name": "lugsoft-docs",
   "private": true,
   "scripts": {
-    "start": "turbo start",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.9.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "engines": {
+    "node": ">=18"
+  }
 }
