@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const {
-  RADIOBS_URL = 'https://radiobs.lugsoft.com.br:3001'
+  RADIOBS_URL = ''
 } = process.env
 
 module.exports = {
@@ -23,14 +23,14 @@ module.exports = {
         destination: `/:path*`,
       },
       // radiobs docs
-      // {
-      //   source: '/radiobs',
-      //   destination: `${RADIOBS_URL}/radiobs`,
-      // },
-      // {
-      //   source: '/radiobs/:path*',
-      //   destination: `${RADIOBS_URL}/radiobs/:path*`,
-      // }
+      {
+        source: '/radiobs',
+        destination: `${RADIOBS_URL}/radiobs`,
+      },
+      {
+        source: '/radiobs/:path*',
+        destination: `${RADIOBS_URL}/radiobs/:path*`,
+      }
     ]
   },
 }
