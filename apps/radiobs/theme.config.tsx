@@ -4,7 +4,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const configPage = {
   siteName: 'RádioBS',
-  siteLogo: <span><b>RádioBS</b> - V5.0.7</span>,
+  siteLogo: <span><b>RádioBS</b> - v5.0.7</span>,
   siteURL: 'https://docs.lugsoft.com.br/radiobs',
   projectLink: 'https://github.com/brenosolutions/lugsoft-docs',
   repDocs: 'https://github.com/brenosolutions/lugsoft-docs/tree/main/apps/radiobs'
