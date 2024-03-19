@@ -6,7 +6,7 @@ const configPage = {
   siteName: 'RádioBS',
   siteLogo: <span><b>RádioBS</b> - V5.0.7</span>,
   siteURL: 'https://docs.lugsoft.com.br/radiobs',
-  ProjectLink: 'https://github.com/brenosolutions/lugsoft-docs',
+  projectLink: 'https://github.com/brenosolutions/lugsoft-docs',
   repDocs: 'https://github.com/brenosolutions/lugsoft-docs/tree/main/apps/radiobs'
 }
 
@@ -33,7 +33,7 @@ const config: DocsThemeConfig = {
   logo: configPage.siteLogo,
 
   project: {
-    link: configPage.repDocs,
+    link: configPage.projectLink,
   },
 
   docsRepositoryBase: configPage.repDocs,
