@@ -1,9 +1,22 @@
 {
-    "index": {
+    "-- intro": {
+        "type": "separator",
         "title": "Começando"
     },
+    "index": {
+        "title": "Introdução"
+    },
     "installation": "Instalação",
+    "-- user": {
+        "type": "separator",
+        "title": "Guia do Usuário"
+    },
     "using": "Utilizando",
+    "-- reseller": {
+        "type": "separator",
+        "title": "Revendedor & Cliente"
+    },
+    "license": "Chave de Licença",
     "troubleshooting": "Solução de Problemas",
     "changelog": {
         "title": "Changelog",
