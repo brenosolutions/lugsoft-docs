@@ -4,8 +4,16 @@
     },
     "installation": "Instalação",
     "using": "Utilizando",
+    "troubleshooting": "Solução de Problemas",
     "changelog": {
         "title": "Changelog",
         "type": "page"
+    },
+    "404": {
+        "type": "page",
+        "theme": {
+            "timestamp": false,
+            "typesetting": "article"
+        }
     }
 }
