@@ -1,10 +1,38 @@
 {
-    "index": {
+    "-- intro": {
+        "type": "separator",
         "title": "Começando"
     },
+    "index": {
+        "title": "Introdução"
+    },
     "installation": "Instalação",
+    "-- user": {
+        "type": "separator",
+        "title": "Guia do Usuário"
+    },
+    "using": "Utilizando",
+    "-- reseller": {
+        "type": "separator",
+        "title": "Revendedor & Cliente"
+    },
+    "license": "Chave de Licença",
+    "troubleshooting": "Solução de Problemas",
+    "support": {
+        "title": "Suporte",
+        "type": "page",
+        "href": "https://www.lugsoft.com.br/central/submitticket.php",
+        "newWindow": true
+    },
     "changelog": {
         "title": "Changelog",
         "type": "page"
+    },
+    "404": {
+        "type": "page",
+        "theme": {
+            "timestamp": false,
+            "typesetting": "article"
+        }
     }
 }
