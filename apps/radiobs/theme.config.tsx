@@ -33,12 +33,13 @@ const config: DocsThemeConfig = {
   logo: configPage.siteLogo,
 
   project: {
-    link: configPage.projectLink,
+    // link: configPage.projectLink,
   },
 
   docsRepositoryBase: configPage.repDocs,
+
   toc: {
-    title: "Nesta Página",
+    title: "SEÇÕES DA PÁGINA",
     backToTop: true
   },
 
@@ -47,11 +48,11 @@ const config: DocsThemeConfig = {
   },
 
   editLink: {
-    text: 'Edite essa página'
+    text: 'Editar Página'
   },
 
   feedback: {
-    content: 'Feedback'
+    content: false
   },
 
   gitTimestamp: ({ timestamp }) => {

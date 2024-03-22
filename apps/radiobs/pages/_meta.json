@@ -18,6 +18,12 @@
     },
     "license": "Chave de Licença",
     "troubleshooting": "Solução de Problemas",
+    "support": {
+        "title": "Suporte",
+        "type": "page",
+        "href": "https://www.lugsoft.com.br/central/submitticket.php",
+        "newWindow": true
+    },
     "changelog": {
         "title": "Changelog",
         "type": "page"
