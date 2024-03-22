@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import { Cards, Card } from 'nextra/components'
 
-<section className="my-10">
-    <h1 className="text-center text-5xl leading-tight font-extrabold lg:text-6xl mb-8">Rádio<span className="text-blue-600">BS</span></h1>
+<section className="mb-12 mt-6">
+    <h1 className="text-center text-5xl leading-tight font-extrabold lg:text-6xl mb-4">Rádio<span className="text-blue-600">BS</span></h1>
     <p className="font-space-grotesk text-center text-xl text-[#666666] dark:text-[#888888] md:text-2xl">RádioBS é um sistema incrível para web rádio responsivo com todos os recursos de que você precisa para iniciar sua rádio na web hoje.</p>
 
-    <div className="mt-10 flex items-center justify-center gap-x-6">
+    <div className="mt-8 flex items-center justify-center gap-x-6">
         <a href="https://www.lugsoft.com.br/radiobs" target="_blank" rel="noopener" className="rounded-md bg-blue-600 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-blue-800">Download</a>
-        <Link href="/installation" className="rounded-md px-3.5 py-2.5 text-md font-semibold text-white shadow-sm">Instalação<span aria-hidden="true"> →</span></Link>
+        <Link href="/installation" className="rounded-md px-3.5 py-2.5 text-md font-semibold text-black dark:text-white shadow-sm">Instalação<span aria-hidden="true"> →</span></Link>
     </div>
 </section>
 
@@ -14,6 +15,13 @@ import Link from 'next/link'
 Bem-vindo à documentação oficial do sistema RádioBS! Este é o seu guia completo para explorar todas as funcionalidades e melhores práticas do RádioBS.
 Desde a configuração inicial até personalizações avançadas, estamos aqui para garantir uma experiência fluida e eficiente.
 Explore, aprenda e entre em contato conosco se precisar de ajuda. Obrigado por escolher o RádioBS!
+
+<Cards className="pt-8">
+  <Card title="Instalando RádioBS" href="/installation" />
+  <Card title="Utilizando RádioBS" href="/using" />
+  <Card title="Chave de Licença" href="/license" />
+  <Card title="Solução de Problemas" href="/troubleshooting" />
+</Cards>
 
 ## O que é RádioBS? [#what-is-radiobs]
 
