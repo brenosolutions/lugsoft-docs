@@ -59,7 +59,7 @@ const config: DocsThemeConfig = {
     const month = timestamp.toLocaleString("default", { month: "long" })
     const date = timestamp.getDate()
     const year = timestamp.getFullYear()
-    return (<> Última atualização em {month} {date}, {year} </>)
+    return (<> Última atualização em {date} de {month} de {year} </>)
   },
 
   footer: {
