@@ -6,7 +6,7 @@ const configPage = {
     siteName: 'RádioBS',
     siteLogo: (
         <span>
-            <b>RádioBS</b> - v5.2.1
+            <b>RádioBS</b> - v5.2.2
         </span>
     ),
     siteURL: 'https://docs.lugsoft.com.br/radiobs',
